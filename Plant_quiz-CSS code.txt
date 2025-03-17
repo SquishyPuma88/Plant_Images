@@ -1,0 +1,142 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2e3b2e;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+/* Container for the quiz */
+.quiz-container {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 60%;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+/* Header styling */
+h1 {
+    font-size: 2.5rem;
+    color: #2e3b2e;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Styling for the quiz questions and answers */
+.slide {
+    display: none;
+    padding-bottom: 20px;
+}
+
+/* Ensure the image container scales proportionally */
+.image {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Image styling */
+.image img {
+    max-width: 100%;  /* Ensures the image does not overflow the container */
+    height: auto;     /* Maintains the aspect ratio */
+    display: block;   /* Prevents extra space under the image */
+    border-radius: 8px; /* Adds rounded corners for aesthetics */
+    object-fit: contain; /* Ensures the whole image fits inside the box */
+    max-height: 300px; /* Limits the image height to keep it reasonable */
+}
+
+
+
+.active-slide {
+    display: block;
+}
+
+/* Style for the question and answers */
+.question {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.answers label {
+    display: block;
+    font-size: 1rem;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.answers input {
+    margin-right: 10px;
+}
+
+.correct {
+    background-color: #c8e6c9;
+}
+
+.incorrect {
+    background-color: #ffcdd2;
+}
+
+.score-display {
+    font-size: 1rem;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Button styling */
+.buttons button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 10px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+    background-color: #45a049;
+}
+
+#previous {
+    background-color: #007BFF;
+}
+
+#previous:hover {
+    background-color: #0056b3;
+}
+
+#submit {
+    background-color: #f44336;
+}
+
+#submit:hover {
+    background-color: #d32f2f;
+}
+
+/* Hide the buttons initially */
+#submit, #previous {
+    display: none;
+}
+
+#next {
+    display: inline-block;
+}
+
+/* Result container */
+#results {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 30px;
+}

@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .slide {
+            display: none;
+        }
+
+        .active-slide {
+            display: block;
+        }
+
+        .score-display {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .correct {
+            background-color: #c8e6c9;
+        }
+
+        .incorrect {
+            background-color: #ffcdd2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="quiz-container">
+        <h1>Plant Identification Quiz</h1>
+        <div id="quiz"></div>
+        <div class="buttons">
+            <button id="submit" style="display:none;">Submit</button>
+            <button id="previous" style="display:none;">Previous</button>
+            <button id="next">Next</button>
+        </div>
+        <div id="results"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
